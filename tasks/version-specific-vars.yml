@@ -7,5 +7,5 @@
 - name: Include version specific vars
   with_first_found:
     - "{{ role_path }}/vars/versions/{{ version }}.yml"
-    - "{{ playbook_dir }}/roles/silpion.lib/vars/versions/noop.yml"
+    - skip: true
   include_vars: "{{ item }}"
