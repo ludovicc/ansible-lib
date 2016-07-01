@@ -7,5 +7,4 @@
 - name: Include version specific vars
   with_first_found:
     - "{{ role_path }}/vars/versions/{{ version }}.yml"
-    - skip: true
   include_vars: "{{ item }}"
